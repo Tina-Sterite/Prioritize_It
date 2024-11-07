@@ -1,0 +1,18 @@
+# conda env create -f environment.yml
+# to update a conda env using this file use the following command
+# conda env update -f environment.yml
+name: PrioritizeIt
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - conda
+  - streamlit
+  - pip
+  - matplotlib
+  - seaborn
+  - pip:
+      - pykernel
+      - streamlit-aggrid
+      - itables
+      - faker
